@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings_history"
+        android:orderInCategory="2"
+        android:title="Settings"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="Available"
+                android:id="@+id/menu_available_item"/>
+            <item
+                android:title="Ongoing"
+                android:id="@+id/menu_ongoing_item"/>
+            <item
+                android:title="Done"
+                android:id="@+id/menu_done_item"/>
+        </menu>
+    </item>
+</menu>

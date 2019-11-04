@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sign_in_2_desc_title_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:text="@string/descriptionTitle"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/sign_in_2_desc_indication_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:text="@string/descriptionIndicationProfile"
+        android:textColor="@color/secondaryTextColor"
+        />
+
+    <EditText
+        android:id="@+id/sign_in_2_desc_edtxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_edit_height_large"
+        android:textSize="@dimen/text_small_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_2_desc_title_txtvw"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="top|left"
+        android:padding="@dimen/padding_small"
+        android:background="@drawable/borders"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"/>
+
+    <TextView
+        android:id="@+id/sign_in_2_hashtag_title_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_2_desc_edtxt"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:text="@string/hashtagTitle"
+        />
+
+    <TextView
+        android:id="@+id/sign_in_2_hashtag_indication_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_2_desc_edtxt"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:text="@string/hashtagIndication"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/text_medium"/>
+
+    <EditText
+        android:id="@+id/sign_in_2_hashtag_edtxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_edit_height_medium"
+        android:textSize="@dimen/text_small_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_2_hashtag_title_txtvw"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="top|left"
+        android:padding="@dimen/padding_small"
+        android:background="@drawable/borders"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/signin_layout_2_next_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_check_24dp" />
+
+</android.support.constraint.ConstraintLayout>

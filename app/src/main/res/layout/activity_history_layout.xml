@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/foregroundColor"
+    android:fitsSystemWindows="true"
+    tools:context=".View.Activities.profile.HistoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/history_appbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/history_tlb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout_main_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/title_history">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/history_tablay"
+            app:tabSelectedTextColor="@color/primaryTextColor"
+            app:tabTextColor="@color/primaryTextLightColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/history_offer_tabitm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_offers" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/history_request_tabitm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/title_requests" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/history_project_tabitm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/title_projects" />
+
+        </android.support.design.widget.TabLayout>
+        <android.support.constraint.ConstraintLayout
+            android:background="@color/backgroundDarkColor"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <Spinner
+                android:id="@+id/mainActivity_sortingSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/post_type_options"
+                android:backgroundTint="@color/foregroundLightColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/history_viewpgr"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

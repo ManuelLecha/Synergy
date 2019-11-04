@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/oneParticipantPost_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/show_one_participant_with_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:layout_marginBottom="@dimen/margin_medium_large"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:gravity="center"
+            android:text="Offer : Offer Title"
+            android:textSize="@dimen/text_large" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/show_one_participant_with_admin_cnstlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:layout_marginBottom="@dimen/margin_medium_large"
+            android:layout_marginLeft="@dimen/margin_medium_large"
+            android:layout_marginRight="@dimen/margin_medium_large"
+            app:layout_constraintTop_toBottomOf="@id/show_one_participant_with_title_txtvw"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <ImageView
+                android:id="@+id/show_one_participant_with_admin_imgvw"
+                android:layout_width="@dimen/pic_size_post"
+                android:layout_height="@dimen/pic_size_post"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/show_one_participant_with_admin_lnlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_medium_large"
+                app:layout_constraintStart_toEndOf="@id/show_one_participant_with_admin_imgvw"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/foregroundLightColor"
+                    android:textSize="@dimen/text_medium"
+                    android:text="@string/author"/>
+
+                <TextView
+                    android:id="@+id/show_one_participant_with_admin_name_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="left"
+                    android:text="Manuel Lecha Sanchez"
+                    android:textSize="@dimen/text_medium" />
+
+                <LinearLayout
+                    android:layout_gravity="left"
+                    android:id="@+id/show_one_participant_with_location_lnlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <ub.edu.pis2017.pis_17.synergy.View.IconTextView
+                        android:id="@+id/show_one_participant_with_location_ictxtvw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="4dp"
+                        android:text="@string/icon_location"
+                        android:textSize="@dimen/text_small_medium"
+                        />
+
+                    <TextView
+                        android:id="@+id/show_one_participant_with_location_txtvw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/placeholder"
+                        android:textSize="@dimen/text_small_medium"
+                        android:autoSizeTextType="uniform"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/show_one_participant_with_participant_cnstlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:layout_marginBottom="@dimen/margin_medium_large"
+            android:layout_marginLeft="@dimen/margin_medium_large"
+            android:layout_marginRight="@dimen/margin_medium_large"
+            app:layout_constraintTop_toBottomOf="@id/show_one_participant_with_admin_cnstlay"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <ImageView
+                android:id="@+id/show_one_participant_with_participant_imgvw"
+                android:layout_width="@dimen/pic_size_post"
+                android:layout_height="@dimen/pic_size_post"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/show_one_participant_with_participant_imgvw"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:textColor="@color/foregroundLightColor"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/participant" />
+
+                <TextView
+                    android:id="@+id/show_one_participant_with_participant_name_txtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium_large"
+
+                    android:text="Lil' Sanchez"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="@dimen/text_medium" />
+            </LinearLayout>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/show_one_participant_with_desc_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/show_one_participant_with_participant_cnstlay"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/descriptionTitle"
+            android:textColor="@color/foregroundLightColor"
+            />
+
+        <TextView
+            android:id="@+id/show_one_participant_with_desc_txtvw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/show_one_participant_with_desc_title_txtvw"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/lorem_ipsum_200"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/borders"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"/>
+
+        <TextView
+            android:textColor="@color/foregroundLightColor"
+            android:textSize="@dimen/text_medium"
+            android:id="@+id/show_one_participant_with_hastahgs_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/show_one_participant_with_desc_txtvw"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/hashtagTitle"
+            />
+
+        <HorizontalScrollView
+            android:id="@+id/show_one_participant_with_hashtags_txtvw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/show_one_participant_with_hastahgs_title_txtvw"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:minHeight="@dimen/min_height_view"
+            >
+
+            <LinearLayout
+                android:id="@+id/show_one_participant_with_hashtag_main_lnlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/show_one_participant_with_hashtag_sub_lnlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_small">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/show_one_participant_with_hashtag_sub_lnlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_small">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/show_one_participant_with_hashtag_sub_lnlay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_small">
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/show_one_participant_with_down_filler_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/show_one_participant_down_filler_height"
+            app:layout_constraintTop_toBottomOf="@id/show_one_participant_with_hashtags_txtvw"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

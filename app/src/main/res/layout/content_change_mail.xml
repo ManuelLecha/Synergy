@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/change_mail_main_lnlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/verify_your_credentials"
+            android:textSize="24sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/change_mail_actual_password_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:hint="@string/hint_password">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/change_mail_actual_password_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_weight="1"
+                android:hint="@string/current_password"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:id="@+id/change_mail_actual_password_vw"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/input_margin_top"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginVertical="@dimen/activity_vertical_margin"
+            android:background="@drawable/rule" />
+
+
+        <TextView
+            android:id="@+id/change_mail_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/new_e_mail"
+            android:textSize="24sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/change_mail_new_mail_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:hint="@string/hint_new_mail">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/change_mail_new_mail_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/change_mail_confirm_new_mail_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:hint="@string/hint_new_mail_repeat">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/change_mail_confirm_new_mail_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:id="@+id/change_mail_confirm_new_mail_vw"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="@dimen/input_margin_top"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:background="@drawable/rule" />
+
+
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/change_mail_confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/secondaryColor"
+            android:text="@string/btn_confirm" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

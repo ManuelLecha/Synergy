@@ -1,0 +1,20 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+    <color name="primaryColor">#1b1b1b</color>
+    <color name="primaryLightColor">#484848</color>
+    <color name="primaryDarkColor">#000</color>
+    <color name="secondaryColor">#fbc02d</color>
+    <color name="secondaryLightColor">#fff263</color>
+    <color name="secondaryDarkColor">#c49000</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="primaryTextLightColor">#B3ffffff</color> <!-- ~70% -->
+    <color name="secondaryTextColor">#000000</color>
+
+    <!-- other colors -->
+    <color name="backgroundDarkColor">#EFEFEF</color>
+    <color name="backgroundColor">#FEFEFE</color>
+    <color name="foregroundColor">#000</color>
+    <color name="foregroundLightColor">#B3000000</color>
+    <color name="foregroundVeryLightColor">#1F000000</color>
+    <color name="black_semi_transparent">#B2000000</color>
+</resources>

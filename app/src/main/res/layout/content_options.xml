@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/options_main_lnlay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/options_change_mail_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/btn_change_mail" />
+
+
+        <Button
+            android:id="@+id/options_change_password_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/btn_change_password" />
+
+        <Button
+            android:id="@+id/options_logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:text="@string/btn_logout"
+            android:backgroundTint="@color/secondaryColor"
+            android:textColor="@color/secondaryTextColor" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

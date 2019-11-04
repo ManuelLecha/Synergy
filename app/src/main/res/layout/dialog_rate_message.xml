@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rate_dialog_main_lnlay"
+        android:orientation="vertical"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/rate_dialog_title_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/placeholder"
+                android:gravity="center"
+                android:textSize="@dimen/text_large"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_medium"/>
+            <ImageView
+                android:id="@+id/rate_dialog_post_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/secondaryColor"
+                android:src="@drawable/ic_open_in_new_24dp"
+                android:textColor="@color/secondaryTextColor"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:background="@drawable/borders"
+            android:padding="@dimen/padding_medium"
+            android:id="@+id/rate_dialog_message_content_txtvw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:nestedScrollingEnabled="true"
+            android:textSize="@dimen/text_small_medium"
+            android:text="@string/lorem_ipsum_200"/>
+
+        <RatingBar
+            android:id="@+id/rate_dialog_rtngbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            />
+
+        <LinearLayout
+            android:id="@+id/rate_dialog_buttons_lnlay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@color/foregroundLightColor"
+                android:id="@+id/rate_dialog_okay_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_medium"
+                android:maxLines="1"
+                android:text="@string/vote_later"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@+id/rate_dialog_rate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_medium"
+                android:maxLines="1"
+                android:text="@string/rate_dialog_btn_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

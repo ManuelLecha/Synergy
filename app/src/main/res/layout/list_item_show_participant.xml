@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height_small">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/show_participant_list_item_profile_pic_imgvw"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_width="@dimen/avatar_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/foregroundColor"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:src="@drawable/logo"
+        />
+
+    <LinearLayout
+        android:id="@+id/show_participant_list_item_data_1_lnlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/show_participant_list_item_profile_pic_imgvw"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/show_participant_list_item_username_txtvw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="left|top"
+            android:layout_weight="1"
+            android:text="@string/placeholder"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/show_participant_list_item_position_name_txtvw"
+            android:textColor="@color/foregroundLightColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="left|bottom"
+            android:layout_weight="1"
+            android:text="@string/placeholder"
+            android:textSize="12dp"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+

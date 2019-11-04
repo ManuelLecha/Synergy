@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/edit_user_profile_content"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_user_profile_photo_imgvw"
+            android:layout_width="@dimen/pic_size_profile"
+            android:layout_height="@dimen/pic_size_profile"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:civ_border_color="@color/foregroundColor"
+            app:civ_border_width="2dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/logo"/>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/marginSpacer"
+            android:layout_width="0dp"
+            android:layout_height="9dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_user_profile_photo_imgvw"
+            app:layout_constraintLeft_toLeftOf="@id/edit_user_profile_photo_imgvw"
+            app:layout_constraintRight_toRightOf="@id/edit_user_profile_photo_imgvw" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/editImageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_edit_24dp"
+
+
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marginSpacer" />
+        
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_user_profile_username_txtietxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_profile_photo_imgvw"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/edit_user_profile_desc_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/descriptionTitle"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_profile_username_txtietxt" />
+
+        <TextView
+            android:id="@+id/edit_user_profile_desc_indication_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_profile_username_txtietxt"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/descriptionIndicationProfile"
+            android:textColor="@color/foregroundLightColor"
+            />
+
+        <EditText
+            android:id="@+id/edit_user_profile_desc_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_edit_height_large"
+            android:textSize="@dimen/text_small_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_profile_desc_title_txtvw"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="top|left"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/borders"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"/>
+
+        <TextView
+            android:id="@+id/edit_user_profile_hashtag_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_profile_desc_edtxt"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/hashtagTitle"
+            />
+
+        <TextView
+            android:id="@+id/edit_user_profile_hashtag_indication_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_profile_desc_edtxt"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/hashtagIndication"
+            android:textColor="@color/foregroundLightColor"
+            android:textSize="@dimen/text_medium"/>
+
+        <EditText
+            android:id="@+id/edit_user_profile_hashtag_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_edit_height_medium"
+            android:textSize="@dimen/text_small_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_profile_hashtag_title_txtvw"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="top|left"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/borders"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

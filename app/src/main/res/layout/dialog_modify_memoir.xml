@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/modify_memoir_dialog_main_lnlay"
+        android:orientation="vertical"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/modify_memoir_dialog_title_txtvw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/edit_memoir"
+            android:gravity="center"
+            android:textSize="@dimen/text_large"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_medium"/>
+
+        <EditText
+            android:id="@+id/modify_memoir_dialog_memoir_content_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small_medium"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/borders"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"/>
+
+        <Button
+            android:backgroundTint="@color/secondaryColor"
+
+            android:id="@+id/modify_memoir_dialog_update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_small_medium"
+            android:maxLines="1"
+            android:text="@string/reply_message_dialog_submit_btn_text"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

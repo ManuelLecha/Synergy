@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inboxLayout_cnstrly_inbox"
+    android:background="@color/backgroundDarkColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/inbox_layout_appbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/inbox_layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="@string/title_inbox"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/inbox_lstvw_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_margin="@dimen/medium_separation"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/backgroundColor"
+        android:cacheColorHint="@color/foregroundColor"
+        android:divider="@color/backgroundDarkColor"
+        android:dividerHeight="5dp"
+        android:fadeScrollbars="false"
+
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="true"
+        android:overScrollFooter="@drawable/empty_footer"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inbox_layout_appbarlay" />
+
+    <TextView
+        android:id="@+id/emptyElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/empy_inbox"
+        android:textColor="@color/foregroundLightColor"
+        android:textSize="19.0sp"/>
+
+    <ProgressBar
+        android:id="@+id/inbox_pgrsbar"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+
+</android.support.constraint.ConstraintLayout>

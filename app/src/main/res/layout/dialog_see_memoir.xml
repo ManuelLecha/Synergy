@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/see_memoir_dialog_main_lnlay"
+        android:orientation="vertical"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/foregroundLightColor"
+            android:id="@+id/see_memoir_dialog_title_txtvw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/see_memoir"
+            android:gravity="center"
+            android:textSize="@dimen/text_large"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_medium"/>
+
+        <TextView
+            android:id="@+id/see_memoir_dialog_memoir_content_txtvw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_medium"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:nestedScrollingEnabled="true"
+            android:textSize="@dimen/text_medium"
+            android:text="@string/lorem_ipsum_200"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

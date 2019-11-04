@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "629192030883",
+    "firebase_url": "https://hivedatabase-f453a.firebaseio.com",
+    "project_id": "hivedatabase-f453a",
+    "storage_bucket": "hivedatabase-f453a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629192030883:android:cb1b5cc2656c38da",
+        "android_client_info": {
+          "package_name": "ub.edu.pis2017.pis_17.synergy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629192030883-9vj74qn90gfacro09bhdim5njvrperge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ub.edu.pis2017.pis_17.synergy",
+            "certificate_hash": "e596986ca9bb7cc6cd1d18accfc61437b5222ea0"
+          }
+        },
+        {
+          "client_id": "629192030883-6mmt1030v6n0vmavhd7pt3q2vvoa34q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQnQrHyAubCBHhUx4WIBZHzF4dEN7aguw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629192030883-6mmt1030v6n0vmavhd7pt3q2vvoa34q8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

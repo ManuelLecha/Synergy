@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height_small">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/many_participant_post_list_item_with_memoir_profile_pic_imgvw"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:src="@drawable/logo"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/foregroundColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/many_participant_post_list_item_with_memoir_data_cnstlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/many_participant_post_list_item_with_memoir_data_cnstlay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/many_participant_post_list_item_with_memoir_profile_pic_imgvw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/many_participant_post_list_item_with_memoir_memoir_imgbtn"
+        android:layout_marginRight="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/many_participant_post_list_item_with_memoir_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/many_participant_post_list_item_with_memoir_location_lnlay"
+            />
+
+        <LinearLayout
+            android:id="@+id/many_participant_post_list_item_with_memoir_location_lnlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/many_participant_post_list_item_with_memoir_title_txtvw"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ub.edu.pis2017.pis_17.synergy.View.IconTextView
+                android:textColor="@color/foregroundLightColor"
+                android:id="@+id/many_participant_post_list_item_with_memoir_location_ictxtvw"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center"
+                android:text="@string/icon_location"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:textColor="@color/foregroundLightColor"
+                android:id="@+id/many_participant_post_list_item_with_memoir_location_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/placeholder"
+                android:textSize="@dimen/text_small"
+                />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/many_participant_post_list_item_with_memoir_memoir_imgbtn"
+        android:layout_width="@dimen/image_memoir_size"
+        android:layout_height="@dimen/image_memoir_size"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:background="@drawable/memoire"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/many_participant_post_list_item_with_memoir_data_cnstlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/margin_medium"/>
+
+</android.support.constraint.ConstraintLayout>

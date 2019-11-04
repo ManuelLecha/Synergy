@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ub.edu.pis2017.pis_17.synergy">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+
+    <application
+        android:name=".Presenter.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_hive"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_hive_round"
+        android:supportsRtl="true"
+        android:theme="@style/Custom">
+
+
+        <activity
+            android:name=".View.Activities.main.MainActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".View.Activities.sign_in.SignInActivity3"
+            android:parentActivityName=".View.Activities.sign_in.SignInActivity2" />
+
+        <activity android:name=".View.Activities.sign_in.SignInActivity1"
+            android:parentActivityName=".View.Activities.sign_in.LoginActivity" />
+
+        <activity
+            android:name=".View.Activities.sign_in.SignInActivity2"
+            android:parentActivityName=".View.Activities.sign_in.SignInActivity1" />
+        <activity
+            android:name=".View.Activities.post.newPost.NewProjectActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.newPost.NewOfferActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.newPost.NewRequestActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+
+        <activity android:name=".View.Activities.sign_in.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".View.Activities.profile.OptionsActivity"
+            android:parentActivityName=".View.Activities.profile.UserProfileActivity" />
+        <activity
+            android:name=".View.Activities.profile.UserProfileActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity android:name=".View.Activities.profile.AlienProfileActivity" />
+        <activity
+            android:name=".View.Activities.profile.UserEditProfileActivity"
+            android:parentActivityName=".View.Activities.profile.UserProfileActivity" />
+        <activity
+            android:name=".View.Activities.profile.InboxActivity"
+            android:parentActivityName=".View.Activities.profile.UserProfileActivity" />
+        <activity
+            android:name=".View.Activities.profile.HistoryActivity"
+            android:parentActivityName=".View.Activities.profile.UserProfileActivity" />
+        <activity
+            android:name=".View.Activities.post.availablePost.alien.AvailableAlienOfferActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.availablePost.alien.AvailableAlienRequestActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.availablePost.alien.AvailableAlienProjectActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.availablePost.own.AvailableOwnOfferActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.availablePost.own.AvailableOwnRequestActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.availablePost.own.AvailableOwnProjectActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.ongoingPost.alien.OngoingAlienOfferActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.ongoingPost.alien.OngoingAlienRequestActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.ongoingPost.alien.OngoingAlienProjectActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.ongoingPost.own.OngoingOwnOfferActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.ongoingPost.own.OngoingOwnRequestActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.ongoingPost.own.OngoingOwnProjectActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.donePost.alien.DoneAlienOfferActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.donePost.alien.DoneAlienRequestActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.donePost.alien.DoneAlienProjectActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.donePost.own.DoneOwnOfferActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.donePost.own.DoneOwnRequestActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.donePost.own.DoneOwnProjectActivity"
+            android:parentActivityName=".View.Activities.main.MainActivity" />
+        <activity
+            android:name=".View.Activities.post.modifyPost.ModifyOfferActivity" />
+        <activity
+            android:name=".View.Activities.post.modifyPost.ModifyRequestActivity" />
+        <activity
+            android:name=".View.Activities.post.modifyPost.ModifyProjectActivity" />
+        <activity android:name=".View.Activities.profile.ChangePasswordActivity"
+            android:parentActivityName=".View.Activities.profile.OptionsActivity"/>
+        <activity android:name=".View.Activities.profile.ChangeMailActivity"
+            android:parentActivityName=".View.Activities.profile.OptionsActivity"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

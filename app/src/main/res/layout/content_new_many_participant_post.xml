@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/new_many_participant_post_title_txtietxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="@string/title_hint"
+            android:inputType="text"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/new_many_participant_desc_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/descriptionTitle"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_post_title_txtietxt" />
+
+        <TextView
+            android:id="@+id/new_many_participant_desc_indication_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_post_title_txtietxt"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/descriptionIndication"
+            android:textColor="@color/foregroundLightColor"
+            />
+
+        <EditText
+            android:id="@+id/new_many_participant_desc_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_edit_height_large"
+            android:textSize="@dimen/text_small_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_desc_title_txtvw"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="top|left"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/borders"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"/>
+
+        <TextView
+            android:id="@+id/new_many_participant_hashtag_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_desc_edtxt"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/hashtagTitle"
+            />
+
+        <TextView
+            android:id="@+id/new_many_participant_hashtag_indication_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_desc_edtxt"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/hashtagIndication"
+            android:textColor="@color/foregroundLightColor"
+            android:textSize="@dimen/text_medium"/>
+
+        <EditText
+            android:id="@+id/new_many_participant_hashtag_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_edit_height_medium"
+            android:textSize="@dimen/text_small_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_hashtag_title_txtvw"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="top|left"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/borders"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"/>
+
+        <TextView
+            android:id="@+id/new_many_participant_participants_title_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_hashtag_edtxt"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/participantsTitle"
+            />
+
+        <TextView
+            android:id="@+id/new_many_participant_participants_indication_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_hashtag_edtxt"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_large"
+            android:text="@string/participantsIndicationEdition"
+            android:textColor="@color/foregroundLightColor"
+            />
+
+        <ListView
+            android:id="@+id/new_many_participant_participants_lstvw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_view_height_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_participants_title_txtvw"
+            android:nestedScrollingEnabled="true">
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/new_many_participant_teammate_buttons_lnlay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_many_participant_participants_lstvw"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:backgroundTint="@color/secondaryColor"
+                android:textColor="@color/secondaryTextColor"
+                android:id="@+id/new_many_participant_add_teammate_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="1"
+                android:text="@string/add_teammate_btn_text"/>
+
+            <Button
+                android:backgroundTint="@color/secondaryColor"
+                android:textColor="@color/secondaryTextColor"
+                android:id="@+id/new_many_participant_delete_teammate_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_weight="1"
+                android:text="@string/delete_teammate_btn_text"/>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Hive</string>
+    <string name="title_activity_new_request">NewRequestActivity</string>
+
+    <!-- Strings for forms -->
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_ncomponents">Number of components</string>
+    <string name="hint_tags">Tags</string>
+    <string name="location">Universitat de Barcelona</string>
+    <string name="hint_mail">Mail</string>
+    <string name="hint_confirma_mail">Confirm mail</string>
+    <string name="hint_confirma_password">Confirm Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_new_mail">New Mail</string>
+    <string name="hint_password">Current Password*</string>
+    <string name="btn_confirm">Send</string>
+    <string name="hint_email">e-mail</string>
+    <!---->
+
+    <!-- Strings for titles -->
+    <string name="title_NewOffer">New Offer</string>
+    <string name="title_NewRequest">New Request</string>
+    <string name="title_NewProject">New Project</string>
+    <string name="title_Opciones">Settings</string>
+    <string name="title_myProject">My Project</string>
+    <string name="title_myOffer">My Offer</string>
+    <string name="title_myRequest">My Request</string>
+
+    <!-- Strings for icons -->
+    <string name="icon_location">&#xf3c5;</string>
+
+    <!-- Strings for sections -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_delet">Delet</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_tabbed___example">Tabbed_Activity_Example</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="sign_in_label1">No account?</string>
+    <string name="sign_in_label2"><u>Sign in</u></string>
+    <string name="login_button_label"><b>Log In</b></string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password*</string>
+    <string name="password_repeat_hint">Repeat your password*</string>
+    <string name="first_name_hint">First Name*</string>
+    <string name="last_name_hint">Last Name*</string>
+    <string name="email_hint">Email*</string>
+    <string name="email_repeat_hint">Repeat your email*</string>
+    <string name="create_account"><b>Create your account</b></string>
+    <string name="confirm_label">Confirm</string>
+    <string name="upload_photo"><b>Upload a profile picture</b></string>
+    <string name="desc_sign_in_label"><b>Write about yourself</b></string>
+    <string name="hashtag_sign_in_label"><b>Add your skills</b></string>
+    <string name="camera_button_text">CAMERA</string>
+    <string name="gallery_button_text">GALLERY</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="title_offers">Offers</string>
+    <string name="title_requests">Requests</string>
+    <string name="title_projects">Projects</string>
+    <string name="hint_skills">Skills</string>
+    <string name="title_modify_offer">Modify Offer</string>
+    <string name="title_ModifyRequest">Modify Request</string>
+    <string name="title_alien_offer">Offer</string>
+    <string name="title_alien_request">Request</string>
+    <string name="title_alien_project">Project</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_userProfile">My Profile</string>
+    <string name="password_hint_login">Password</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="hint_new_mail_repeat">Repeat Mail</string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="postNameTitle">Post title</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is not valid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="auth_failed">Not correct e-mail or password</string>
+
+    <string name="vacants">Vacancies</string>
+    <string name="admin">Admin</string>
+
+    <string name="auth_error">Error in the authentication</string>
+
+    <string name="lorem_ipsum_200">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</string>
+    <string name="placeholder_number">NaN</string>
+    <string name="title_ongoing">ONGOING</string>
+    <string name="title_done">DONE</string>
+    <string name="project_admin">Project administrator</string>
+    <string name="descriptionTitle">Description</string>
+    <string name="participantsTitle">Participants</string>
+    <string name="participantsIndication"><i>Touch to apply</i></string>
+    <string name="hashtagTitle">Hashtags</string>
+    <string name="project_title_hint">Project title</string>
+    <string name="descriptionIndication"><i>What's the post about?</i></string>
+    <string name="hashtagIndication"><i>#Hashtag1 #Hashtag2...</i></string>
+    <string name="participantsIndicationEdition"><i>Create your team</i></string>
+    <string name="project_position_title_hint">Position</string>
+    <string name="title_new_project">Project Creation</string>
+    <string name="participants">Participants</string>
+    <string name="vacant_label">Vacant</string>
+    <string name="see_post_dialog_btn_text">OPEN POST</string>
+    <string name="okay_dialog_btn_text">OK</string>
+    <string name="decline_dialog_btn_text">DECLINE</string>
+    <string name="accept_dialog_btn_text">CONFIRM</string>
+    <string name="reply_dialog_btn_text">REPLY</string>
+    <string name="rate_dialog_btn_text">RATE</string>
+    <string name="reply_message_dialog_send_btn_text">SEND</string>
+    <string name="reply_message_dialog_cancel_btn_text">CANCEL</string>
+    <string name="title_new_offer">Offer Creation</string>
+    <string name="title_new_request">Request Creation</string>
+    <string name="title_modify_request">Modify Request</string>
+    <string name="title_modify_project">Modify Project</string>
+    <string name="title_hint">Title</string>
+    <string name="title_alien_profile">User Profile</string>
+    <string name="title_user_profile">My Profile</string>
+    <string name="descriptionIndicationProfile"><i>Talk about yourself</i></string>
+    <string name="title_history">History</string>
+    <string name="add_teammate_btn_text">+</string>
+    <string name="delete_teammate_btn_text">-</string>
+    <string name="option_score">Search by poster score</string>
+    <string name="option_proximity">Search by proximity</string>
+    <string name="your_description">Your description</string>
+    <string name="logout">LOGOUT</string>
+    <string name="reload_message">Nothing to be found!\nTry reloading the page...</string>
+    <string name="vote_later">LATER</string>
+    <string name="close_button">CLOSE</string>
+    <string name="from">From:</string>
+    <string name="btn_change_mail">CHANGE MAIL</string>
+    <string name="btn_change_password">CHANGE PASSWORD</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="title_change_password">Change password</string>
+    <string name="title_change_mail">Change mail</string>
+    <string name="current_password">Current password</string>
+    <string name="current_e_mail">Current E-mail*</string>
+    <string name="verify_your_credentials">Verify your credentials</string>
+    <string name="new_password">New password</string>
+    <string name="new_e_mail">New E-mail</string>
+    <string name="change_password">Change Password</string>
+    <string name="settings">Settings</string>
+    <string name="sign_up">Sign up</string>
+    <string name="repeat_yout_password">Repeat yout password*</string>
+    <string name="reply_message_dialog_submit_btn_text">SUBMIT</string>
+    <string name="empy_inbox">There are no messages yet!</string>
+    <string name="author">Author:</string>
+    <string name="participant">Participant:</string>
+    <string name="message">Message</string>
+    <string name="edit_memoir">Edit memoir</string>
+    <string name="see_memoir">Memoir</string>
+
+    <!-- options -->
+    <string-array name="sorting_options">
+        <item name="sorting_state_proximity">Sort by proximity</item>
+        <item name="sorting_state_score">Sort by user score</item>
+    </string-array>
+
+    <string-array name="post_type_options">
+        <item name="type_available">Available posts</item>
+        <item name="type_ongoing">Ongoing posts</item>
+        <item name="type_done">Done posts</item>
+    </string-array>
+</resources>
